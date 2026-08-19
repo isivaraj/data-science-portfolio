@@ -1,4 +1,4 @@
-# Iniya Sivaraj
+# Your Name
 Data Science Student  
 UNC Charlotte
 ---
