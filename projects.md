@@ -37,25 +37,30 @@ The dataset will include the following variables:
 - **Release Year:** The year the movie was released.
 
 ### Dataset Size
-I will add the number of movies in the dataset after collecting the data.
+The dataset will include a collection of movies from The Movie Database (TMDB) API. The exact number of movies will be recorded after the data is collected.
 
 ### Missing Values
-I will check for missing values after collecting and cleaning the data.
+Missing values will be checked after the data is collected from the TMDB API. Movies with missing budget, revenue, or rating information may need to be removed or handled during data cleaning.
 
 ### Data Cleaning
-This section will explain how I cleaned the data using pandas.
+The data will be cleaned using pandas. I will check for missing values, remove movies with unusable budget or revenue data, and make sure the variables are in the correct format for analysis.
 
 ### Visualizations
-This section will include at least two graphs related to the research question.
+At least two visualizations will be created to explore the research question.
+
+- Visualization 1 will compare movie budget and audience rating.
+- Visualization 2 will compare movie budget and revenue.
+
+Each visualization will include a title, labeled axes, and a short explanation of what the graph shows.
 
 ### Limitations
-This section will discuss missing information, possible bias, and other limitations.
+This dataset may have missing or incomplete information for some movies, especially budget and revenue values. Audience ratings may also be affected by the number and type of users who rated each movie. The dataset may not represent every movie equally, so the results should be interpreted with caution.
 
 ### Code
-A link to the project code or Jupyter Notebook will be added here.
+YOUR_CODE_LINK_HERE
 
 ### References
-APA sources will be added here.
+At least three peer-reviewed sources related to movie budgets, audience ratings, revenue, or film performance will be included here in APA format.
 
 ### AI Usage
-AI was used to help organize and explain parts of this project.
+AI tools were used to help organize the project, explain concepts, and improve the clarity of the written sections. The data analysis, code, and final interpretations were reviewed and completed by me.
