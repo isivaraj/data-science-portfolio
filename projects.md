@@ -46,12 +46,20 @@ Missing values will be checked after the data is collected from the TMDB API. Mo
 The data will be cleaned using pandas. I will check for missing values, remove movies with unusable budget or revenue data, and make sure the variables are in the correct format for analysis.
 
 ### Visualizations
-At least two visualizations will be created to explore the research question.
 
-- Visualization 1 will compare movie budget and audience rating.
-- Visualization 2 will compare movie budget and revenue.
+#### Budget vs Audience Rating
 
-Each visualization will include a title, labeled axes, and a short explanation of what the graph shows.
+The first visualization compares movie budget and audience rating. The graph shows that higher-budget movies do not always receive much higher ratings.
+
+#### Budget vs Revenue
+
+The second visualization compares movie budget and revenue. The graph shows a clearer positive relationship, where higher-budget movies tend to earn more revenue.
+
+### Results
+
+The correlation between movie budget and audience rating was about 0.38, which shows a weak-to-moderate positive relationship. This means that higher-budget movies sometimes receive higher ratings, but the relationship is not very strong.
+
+The correlation between movie budget and revenue was about 0.76, which shows a strong positive relationship. This suggests that movies with higher budgets tend to earn more revenue.
 
 ### Limitations
 This dataset may have missing or incomplete information for some movies, especially budget and revenue values. Audience ratings may also be affected by the number and type of users who rated each movie. The dataset may not represent every movie equally, so the results should be interpreted with caution.
