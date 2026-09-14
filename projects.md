@@ -7,6 +7,10 @@ This section documents my data science projects, research questions, and data st
 
 Do movies with higher budgets tend to receive higher audience ratings and earn more revenue?
 
+### Background
+
+Movie budgets can affect many parts of production, including actors, special effects, marketing, and distribution. This project looks at whether movies with larger budgets tend to receive higher audience ratings and earn more revenue.
+
 ### Dataset Source
 
 The data for this project will come from The Movie Database (TMDB) API. The dataset will include movie information such as budget, revenue, audience rating, genre, and release date.
@@ -19,22 +23,13 @@ Each row in the dataset represents one movie.
 
 ### Features and Variables
 
-The dataset will include the following variables:
+The dataset includes the following variables:
 
-- Movie Title
-- Budget
-- Revenue
-- Audience Rating
-- Genre
-- Release Year
-
-### Variable Descriptions
-
+- **Movie Title:** Identifies each movie.
 - **Budget:** The amount of money spent to produce the movie.
 - **Revenue:** The amount of money the movie earned.
-- **Audience Rating:** The average rating given by viewers.
-- **Genre:** The category or type of movie.
-- **Release Year:** The year the movie was released.
+- **Audience Rating:** The average TMDB user rating for the movie.
+- **Release Date:** The date the movie was released.
 
 ### Dataset Size
 The original dataset contained 100 movies. After removing movies with missing or unusable budget and revenue values, 62 movies remained for analysis.
@@ -77,7 +72,12 @@ Because of these limitations, the results show relationships in this sample but 
 [View Project Notebook](movie_project.ipynb)
 
 ### References
-At least three peer-reviewed sources related to movie budgets, audience ratings, revenue, or film performance will be included here in APA format.
+
+Simonton, D. K. (2005). Cinematic creativity and production budgets: Does money make the movie? *The Journal of Creative Behavior, 39*(1), 1–15. https://doi.org/10.1002/j.2162-6057.2005.tb01246.x
+
+Ravid, S. A. (1999). Information, blockbusters, and stars: A study of the film industry. *The Journal of Business, 72*(4), 463–492. https://doi.org/10.1086/209624
+
+Moon, S., Bergey, P. K., & Iacobucci, D. (2010). Dynamic effects among movie ratings, movie revenues, and viewer satisfaction. *Journal of Marketing, 74*(1), 108–121. https://doi.org/10.1509/jmkg.74.1.108
 
 ### AI Usage
 AI tools were used to help organize the project, explain concepts, and improve the clarity of the written sections. The data analysis, code, and final interpretations were reviewed and completed by me.
