@@ -1,5 +1,14 @@
 # Blog
 Throughout this course, I will write posts about data science topics I am interested in.
+
+## Introduction
+
+Hi, I’m Iniya Sivaraj, a Data Science student at UNC Charlotte with a minor in Artificial Intelligence.
+
+I have experience with Python, data analysis, research, hackathons, and technology-based projects. Through these experiences, I have become interested in using data and AI to solve real-world problems.
+
+My career goal is to continue building my skills in data science, artificial intelligence, and analytics and gain experience working on real-world projects.
+
 ## Why Data Science in Social Contexts Matters
   Before taking this course, I mostly thought about data science as working with numbers, coding, and finding patterns in datasets. But I am starting to understand that data science becomes much more complicated when the data represents real people and real social issues. A model might look like just numbers on a computer, but those numbers can represent someone’s income, education, health, opportunities, or experiences. Because of that, I think learning data science in a social and interdisciplinary context is really important.
   One reason we model social topics and people is because it can help us understand patterns that would be difficult to notice otherwise. For example, data could help show differences in access to education, transportation, healthcare, or jobs between different communities. Models can also help organizations make predictions and decisions based on large amounts of information. At the same time, I do not think a model can perfectly represent a person or their situation. People are much more complicated than a few variables in a dataset, so it is important to understand the limits of what a model is actually telling us.
