@@ -46,7 +46,10 @@ Missing values will be checked after the data is collected from the TMDB API. Mo
 The data will be cleaned using pandas. I will check for missing values, remove movies with unusable budget or revenue data, and make sure the variables are in the correct format for analysis.
 
 ### Visualizations
-
+ ![Budget vs Audience Rating](budget_vs_rating.png)
+ 
+ ![Budget vs Revenue](budget_vs_revenue.png)
+ 
 #### Budget vs Audience Rating
 
 The first visualization compares movie budget and audience rating. The graph shows that higher-budget movies do not always receive much higher ratings.
