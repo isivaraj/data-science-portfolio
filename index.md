@@ -2,8 +2,12 @@
 Data Science Student  
 UNC Charlotte
 ---
-## About Me
-I’m Iniya Sivaraj, a Data Science student at UNC Charlotte with an interest in using data, technology, and problem-solving to understand real-world issues. I enjoy working on projects involving Python, Excel, data analysis, and AI, while also exploring creative interests like design and art. I’m always looking for opportunities to learn new skills, work with others, and apply what I learn to meaningful projects. ---
+# About Me
+Hi, I’m Iniya. I am a Data Science student at UNC Charlotte with an interest in artificial intelligence, data analysis, and using technology to solve real-world problems. I am interested in learning how data can be used in areas such as business, cities, technology, and decision-making.
+
+## Career Goals
+My goal is to build skills in data science, AI, and analytics and apply them to real-world projects.
+
 ## Portfolio
 - [Blog](blog.md)
 - [Projects](projects.md)
