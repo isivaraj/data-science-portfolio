@@ -10,7 +10,7 @@ My goal is to build skills in data science, AI, and analytics and apply them to 
 
 ## Resume
 
-[View My Resume]()
+[View My Resume](IniyaSivarajResume2026.pdf)
 
 ## Portfolio
 - [Blog](blog.md)
