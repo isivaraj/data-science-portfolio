@@ -37,13 +37,15 @@ The dataset will include the following variables:
 - **Release Year:** The year the movie was released.
 
 ### Dataset Size
-The dataset will include a collection of movies from The Movie Database (TMDB) API. The exact number of movies will be recorded after the data is collected.
+The original dataset contained 100 movies. After removing movies with missing or unusable budget and revenue values, 62 movies remained for analysis.
 
 ### Missing Values
-Missing values will be checked after the data is collected from the TMDB API. Movies with missing budget, revenue, or rating information may need to be removed or handled during data cleaning.
+Some movies had a budget or revenue value of 0, which was treated as missing or unusable data. These movies were removed because they could not be used to analyze the relationship between budget, revenue, and audience rating.
 
 ### Data Cleaning
-The data will be cleaned using pandas. I will check for missing values, remove movies with unusable budget or revenue data, and make sure the variables are in the correct format for analysis.
+The data was cleaned using pandas. Movies with a budget of 0 or revenue of 0 were treated as having missing or unusable financial data and were removed.
+
+The original dataset had 100 movies, and 62 movies remained after cleaning.
 
 ### Visualizations
  ![Budget vs Audience Rating](budget_vs_rating.png)
@@ -65,10 +67,14 @@ The correlation between movie budget and audience rating was about 0.38, which s
 The correlation between movie budget and revenue was about 0.76, which shows a strong positive relationship. This suggests that movies with higher budgets tend to earn more revenue.
 
 ### Limitations
-This dataset may have missing or incomplete information for some movies, especially budget and revenue values. Audience ratings may also be affected by the number and type of users who rated each movie. The dataset may not represent every movie equally, so the results should be interpreted with caution.
+This analysis has several limitations. Some movies were removed because TMDB listed their budget or revenue as 0, which reduced the dataset from 100 movies to 62 movies.
+
+The dataset also only includes a sample of popular movies from TMDB, so it may not represent all movies equally. Audience ratings can also be influenced by who chooses to rate a movie and how many people rated it.
+
+Because of these limitations, the results show relationships in this sample but do not prove that a higher budget directly causes higher ratings or revenue.
 
 ### Code
-YOUR_CODE_LINK_HERE
+[View Project Notebook](movie_project.ipynb)
 
 ### References
 At least three peer-reviewed sources related to movie budgets, audience ratings, revenue, or film performance will be included here in APA format.
