@@ -12,6 +12,10 @@ My goal is to build skills in data science, AI, and analytics and apply them to 
 
 [View My Resume](IniyaSivarajResume2026.pdf)
 
+## LinkedIn
+
+[View My LinkedIn Profile](https://linkedin.com/in/iniya-sivaraj)
+
 ## Portfolio
 - [Blog](blog.md)
 - [Projects](projects.md)
