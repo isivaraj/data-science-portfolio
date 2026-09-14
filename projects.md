@@ -15,8 +15,6 @@ Movie budgets can affect many parts of production, including actors, special eff
 
 The data for this project will come from The Movie Database (TMDB) API. The dataset will include movie information such as budget, revenue, audience rating, genre, and release date.
 
-That covers the source part of the rubric, but later we’ll still need to add the dataset’s unit of analysis,
-
 ### Unit of Analysis
 
 Each row in the dataset represents one movie.
