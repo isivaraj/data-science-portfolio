@@ -67,7 +67,7 @@ The dataset also only includes a sample of popular movies from TMDB, so it may n
 Because of these limitations, the results show relationships in this sample but do not prove that a higher budget directly causes higher ratings or revenue.
 
 ### Code
-[View Project Notebook](movie_project.ipynb)
+[View Project Notebook]([movie_project.ipynb](https://github.com/isivaraj/data-science-portfolio/blob/main/movie_project.ipynb))
 
 ### References
 
