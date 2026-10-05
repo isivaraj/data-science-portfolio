@@ -227,6 +227,8 @@ This exploration showed that the model would need to handle both typical foods a
 
 #### Fat vs Calories
 
+![Fat vs Calories](fat_vs_calories.png)
+
 The relationship between fat and calories shows a clear upward pattern.
 
 Foods with more fat generally tend to have higher calorie values.
