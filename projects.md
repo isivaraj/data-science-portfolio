@@ -79,3 +79,13 @@ Moon, S., Bergey, P. K., & Iacobucci, D. (2010). Dynamic effects among movie rat
 
 ### AI Usage
 AI tools were used to help organize the project, explain concepts, and improve the clarity of the written sections. The data analysis, code, and final interpretations were reviewed and completed by me.
+
+---
+
+## Project 2: Predicting Calories from Nutritional Information
+
+This machine-learning project uses USDA FoodData Central nutritional data to predict the calorie content of foods.
+
+I compare Linear Regression and K-Nearest Neighbors Regression and evaluate their performance using regression metrics.
+
+[View Project 2](nutrition-project.html)
