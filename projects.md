@@ -9,11 +9,21 @@ Do movies with higher budgets tend to receive higher audience ratings and earn m
 
 ### Background
 
-Movie budgets can affect many parts of production, including actors, special effects, marketing, and distribution. This project looks at whether movies with larger budgets tend to receive higher audience ratings and earn more revenue.
+Movie studios spend very different amounts of money producing films. Larger budgets can allow studios to hire well-known actors, use more advanced special effects, increase marketing, and expand distribution.
+
+I chose this topic because I wanted to see whether spending more money on a movie is actually connected to better outcomes. A larger budget may help a movie earn more money, but it does not necessarily mean audiences will enjoy the movie more.
+
+This question could be useful for movie studios, producers, and even movie fans because it helps show whether production spending is more strongly connected to financial success or audience reception.
+
+This project compares movie budget with both audience ratings and revenue to see which relationship is stronger.
 
 ### Dataset Source
 
-The data for this project will come from The Movie Database (TMDB) API. The dataset will include movie information such as budget, revenue, audience rating, genre, and release date.
+The data for this project comes from The Movie Database (TMDB) API.
+
+I chose TMDB because it provides movie information including budget, revenue, audience ratings, genre, and release date in one source, which makes it useful for comparing financial information with audience reactions.
+
+The dataset originally included 100 movies.
 
 ### Unit of Analysis
 
@@ -47,24 +57,69 @@ The original dataset had 100 movies, and 62 movies remained after cleaning.
  
 #### Budget vs Audience Rating
 
-The first visualization compares movie budget and audience rating. The graph shows that higher-budget movies do not always receive much higher ratings.
+The first visualization compares movie budget with audience rating.
+
+There is a slight upward trend, but the points are widely spread out. This suggests that spending more money on a movie does not guarantee that audiences will rate it much higher.
+
+This is interesting because it shows that factors other than budget, such as story, acting, genre, or audience expectations, may play an important role in how viewers rate a movie.
 
 #### Budget vs Revenue
 
-The second visualization compares movie budget and revenue. The graph shows a clearer positive relationship, where higher-budget movies tend to earn more revenue.
+The second visualization compares movie budget with revenue.
+
+This graph shows a much clearer positive relationship. Movies with larger budgets generally tended to earn more revenue.
+
+Compared with the audience-rating graph, the pattern is much stronger. This suggests that production spending may have a stronger relationship with financial performance than with audience satisfaction.
 
 ### Results
 
-The correlation between movie budget and audience rating was about 0.38, which shows a weak-to-moderate positive relationship. This means that higher-budget movies sometimes receive higher ratings, but the relationship is not very strong.
+The results showed two very different relationships.
 
-The correlation between movie budget and revenue was about 0.76, which shows a strong positive relationship. This suggests that movies with higher budgets tend to earn more revenue.
+The correlation between movie budget and audience rating was about **0.38**, which represents a weak-to-moderate positive relationship. Higher-budget movies sometimes received higher audience ratings, but the relationship was not very strong.
+
+The correlation between movie budget and revenue was about **0.76**, which represents a strong positive relationship. Movies with larger production budgets generally tended to earn more revenue.
+
+The most interesting result was the difference between these two correlations. Budget was much more strongly related to revenue than it was to audience rating.
+
+This suggests that spending more money may help a movie achieve greater financial success through factors such as production scale, marketing, or distribution, but spending more money does not necessarily make audiences enjoy the movie more.
+
+Overall, the results suggest that budget appears to be more useful for explaining financial performance than audience satisfaction.
+
+### Interesting Findings
+
+One of the most interesting findings was that the two outcomes behaved differently even though they were compared with the same variable.
+
+Budget had only a moderate relationship with audience ratings but had a strong relationship with revenue.
+
+This shows why it is important to examine more than one measure of movie success. A movie can be financially successful without receiving especially high audience ratings, while a highly rated movie does not necessarily need one of the largest production budgets.
+
+The visualizations also show that not every movie follows the overall trend. Some movies appear farther away from the main pattern, showing that budget alone cannot explain every movie's performance.
 
 ### Limitations
-This analysis has several limitations. Some movies were removed because TMDB listed their budget or revenue as 0, which reduced the dataset from 100 movies to 62 movies.
 
-The dataset also only includes a sample of popular movies from TMDB, so it may not represent all movies equally. Audience ratings can also be influenced by who chooses to rate a movie and how many people rated it.
+This analysis has several limitations.
 
-Because of these limitations, the results show relationships in this sample but do not prove that a higher budget directly causes higher ratings or revenue.
+The original dataset contained 100 movies, but movies with a budget or revenue value of 0 were removed because those values could not be used reliably. This reduced the final dataset to 62 movies.
+
+Removing these movies may have affected the results because films with missing financial information may differ from the movies that remained in the dataset.
+
+The dataset also contains a sample of popular movies from TMDB, so it may not represent all movies equally. Smaller independent films, older movies, or less popular movies may be underrepresented.
+
+Audience ratings also have limitations because they depend on who chooses to rate a movie and how many users submit ratings.
+
+Finally, correlation does not prove causation. The results show that budget and revenue are strongly related in this sample, but they do not prove that increasing a movie's budget will automatically increase its revenue. Other factors such as marketing, franchise popularity, release timing, genre, and star power could influence the results.
+
+### Conclusion
+
+This project asked whether movies with higher budgets tend to receive higher audience ratings and earn more revenue.
+
+The results suggest that the answer depends on how movie success is measured.
+
+Higher budgets had only a weak-to-moderate relationship with audience ratings, while they had a much stronger relationship with revenue.
+
+This means that a larger production budget may be associated with greater financial success, but it does not guarantee that audiences will rate a movie more highly.
+
+The project helped show that financial success and audience satisfaction are different outcomes and that looking at both provides a more complete picture of movie performance.
 
 ### Code
 [View Project Notebook](https://github.com/isivaraj/data-science-portfolio/blob/main/movie_project.ipynb)
