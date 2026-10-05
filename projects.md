@@ -261,6 +261,4 @@ U.S. Department of Agriculture & U.S. Department of Health and Human Services. (
 
 ### AI Usage
 
-I used OpenAI ChatGPT, GPT-5.6, to help explain machine-learning concepts, troubleshoot code, organize the project, improve written explanations, and review the project against the assignment rubric.
-
-I reviewed, edited, and ran the code myself and verified the project outputs before publication.
+AI tools were used to help organize the project, explain concepts, and improve the clarity of the written sections. The data analysis, code, and final interpretations were reviewed and completed by me.
