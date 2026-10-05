@@ -84,14 +84,7 @@ AI tools were used to help organize the project, explain concepts, and improve t
 
 ## Project 2: Predicting Calories from Nutritional Information
 
----
-layout: default
-title: Nutrition and Calorie Prediction
----
-
-# Predicting Calories from Nutritional Information
-
-## Personal Portfolio Project Two
+### Personal Portfolio Project Two
 
 This project uses machine learning to investigate whether nutritional information can be used to predict the calorie content of a food.
 
