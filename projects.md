@@ -145,13 +145,23 @@ Can the nutritional characteristics of a food be used to predict its calorie con
 
 ### Background
 
-Calories represent the amount of energy provided by food. Nutritional factors such as protein, carbohydrates, fat, fiber, and sodium may help explain differences in calorie content.
+I chose this topic because nutrition information is something people interact with every day when comparing foods, reading labels, or making dietary decisions.
 
-This project uses machine learning to predict calories based on nutritional information.
+Calories represent the amount of energy provided by food. Nutrients such as carbohydrates, protein, and fat contribute to the energy content of food, which suggests that these variables may be useful predictors of calories.
+
+This makes the problem meaningful because predicting calorie content from nutritional information could help show which nutrients are most strongly connected to energy content.
+
+This project uses USDA FoodData Central because it provides standardized nutritional information for many foods and includes variables that can be used for machine-learning analysis.
+
+The goal is not to replace official nutrition labels, but to investigate whether nutritional features can be used to estimate calorie content with reasonable accuracy. 
 
 ### Dataset Source
 
 The data comes from the USDA FoodData Central Foundation Foods dataset.
+
+I chose this dataset because it contains standardized food-level nutritional information, including calories, protein, carbohydrates, fat, fiber, and sodium.
+
+These variables make the dataset useful for a regression problem because they provide measurable nutritional characteristics that may help explain differences in calorie content.
 
 ### Unit of Analysis
 
@@ -189,13 +199,17 @@ Rows with missing values were removed so that every observation contained comple
 
 ### Data Cleaning
 
-The food and nutrient datasets were combined using the USDA FoodData Central ID.
+The food and nutrient datasets were combined using each food's USDA FoodData Central ID.
 
-Only Foundation Foods were included.
+Only Foundation Foods were included in the analysis.
 
-The data was organized so that each food had values for calories, protein, carbohydrates, fat, fiber, and sodium.
+The nutrient data was reorganized so that each food had one row containing values for calories, protein, carbohydrates, fat, fiber, and sodium.
 
-Rows with missing values were removed.
+Rows containing missing values in the selected variables were removed so that every observation used for modeling had complete information.
+
+After cleaning, 54 foods remained.
+
+This decision reduced the size of the dataset, but it prevented the models from being trained on incomplete observations.
 
 ### Visualizations
 
@@ -203,19 +217,45 @@ Rows with missing values were removed.
 
 ![Distribution of Calories](calorie_distribution.png)
 
-The calorie distribution shows that foods in the dataset have a wide range of calorie values.
+The calorie distribution shows that most foods in the dataset are concentrated at lower calorie values, while a smaller number of foods have much higher calorie values.
 
-Some foods have much higher calorie values than others, which may affect model performance.
+This uneven distribution suggests that some foods may act as outliers.
+
+These extreme values are important because they can increase prediction error and may affect model performance, especially in a relatively small dataset.
+
+This exploration showed that the model would need to handle both typical foods and foods with unusually high calorie values.
 
 #### Fat vs Calories
 
-Foods with higher fat values generally tended to have higher calorie values.
+The relationship between fat and calories shows a clear upward pattern.
 
-This helped support including fat as one of the predictor variables.
+Foods with more fat generally tend to have higher calorie values.
+
+This makes fat a useful predictor because fat contributes substantially to the energy content of food.
+
+The pattern supported including fat as one of the features in the model, along with protein, carbohydrates, fiber, and sodium.
+
+### Feature Selection
+
+The final predictor variables were:
+
+- Protein
+- Carbohydrates
+- Fat
+- Fiber
+- Sodium
+
+These variables were selected because they describe major nutritional characteristics of food and may help explain differences in calorie content.
+
+Fat, carbohydrates, and protein are directly connected to food energy, while fiber and sodium provide additional information about food composition.
+
+Food name was not used as a predictor because it is an identifier rather than a numerical nutritional feature.
+
+Calories were used as the target variable. 
 
 ### Train/Test Split
 
-The dataset was divided into:
+The cleaned dataset was divided into:
 
 - 80% training data
 - 20% testing data
@@ -224,35 +264,47 @@ A fixed `random_state=42` was used so the split could be reproduced.
 
 The models were trained only on the training data and evaluated using the testing data.
 
+This helps prevent data leakage because the model does not learn from the observations that are later used to evaluate its performance.
+
+The same training and testing split was used for both models so the comparison would be fair.
+
 ### Baseline Model
 
-A baseline model was created before training the machine-learning models.
+Before training the machine-learning models, I created a baseline model.
 
-The baseline predicted the average calorie value from the training set for every food in the test set.
+The baseline predicted the average calorie value from the training data for every food in the testing set.
 
-This provided a benchmark for comparing the machine-learning models.
+This represents a simple prediction strategy that does not use any nutritional features.
+
+The purpose of the baseline is to provide a benchmark. A useful machine-learning model should perform better than simply predicting the average calorie value for every food.
 
 ### Machine Learning Models
 
-Two regression models were trained:
+Two regression models were trained and compared.
 
 #### Linear Regression
 
-Linear Regression was used because calories are numerical and nutritional features have measurable relationships with calorie content.
+Linear Regression was selected because the target variable, calories, is numerical and several nutritional variables have approximately linear relationships with calorie content.
+
+This model also makes it easier to interpret how each predictor contributes to the final prediction.
 
 #### K-Nearest Neighbors Regression
 
-KNN Regression predicts calories using foods with similar nutritional characteristics.
+K-Nearest Neighbors Regression was selected as a second model because it predicts calories based on foods with similar nutritional characteristics.
 
-The predictor variables were standardized before using KNN because the model relies on distances between observations.
+Before fitting KNN, the numerical features were standardized.
+
+Scaling was important because KNN relies on distance calculations. Variables such as sodium have much larger numerical values than variables such as protein or fat, so scaling prevents larger-scale variables from dominating the distance calculation.
+
+Both models were trained and tested using the same data split so their performance could be compared fairly.
 
 ### Results
 
-Mean Absolute Error (MAE) was used to compare model performance.
+The models were evaluated using Mean Absolute Error (MAE).
 
-MAE measures the average difference between the predicted calorie values and the actual calorie values.
+MAE measures the average absolute difference between the model's predicted calorie values and the actual calorie values.
 
-A lower MAE represents better model performance.
+A lower MAE represents better predictive performance because it means the predictions are closer to the true values.
 
 | Model | MAE |
 |---|---:|
@@ -262,41 +314,73 @@ A lower MAE represents better model performance.
 
 ![Model MAE Comparison](model_mae_comparison.png)
 
-The best-performing model was:
+The best-performing model was **ADD FINAL MODEL HERE**.
 
-**ADD FINAL MODEL HERE**
+This model was selected because it had the lowest MAE and therefore produced the most accurate calorie predictions on the testing data.
 
-This model was selected because it had the lowest Mean Absolute Error.
+The comparison with the baseline is especially important because it shows whether the machine-learning models actually learned useful patterns from the nutritional features.
+
+### Interesting Findings and Prediction Errors
+
+One important finding was that the nutritional features were useful for predicting calorie content, but the model did not perform equally well for every food.
+
+Foods with typical nutritional values were generally easier to predict, while foods with unusual nutrient combinations or very high calorie values could produce larger prediction errors.
+
+This is especially important because the dataset is small. A few unusual foods can have a noticeable effect on the overall error metric.
+
+Looking at individual prediction errors helps show that a model can have a good overall score while still performing poorly on certain observations.
 
 ### Model Interpretation
 
-The results suggest that nutritional features contain useful information for predicting calorie content.
+The model results suggest that nutritional characteristics contain useful information for predicting calorie content.
 
-Fat, carbohydrates, and protein are especially relevant because they contribute to the energy content of food.
+Fat, carbohydrates, and protein are especially important because they contribute directly to the energy content of food.
 
-The model may perform less accurately for foods with unusual nutritional values or extreme calorie amounts.
+If Linear Regression performs best, this suggests that much of the relationship between nutrients and calories can be represented using relatively simple linear relationships.
 
-### Limitations
+The model should not be interpreted as proving that every feature directly causes changes in calories. Instead, it identifies relationships present in this dataset.
+
+The model is also more reliable for foods that are similar to the foods in the training data and may be less reliable for foods with unusual nutritional profiles.
+
+### Limitations and Ethics
 
 This project has several limitations.
 
-Only 54 foods remained after removing missing values, so the final dataset is relatively small.
+Only 54 foods remained after removing rows with missing values, so the final dataset is relatively small.
 
-The dataset may not represent all food categories equally.
+The dataset may not represent every food category equally. Certain types of foods may be overrepresented or underrepresented.
 
-Removing rows with missing values may also affect the types of foods included in the final analysis.
+Removing observations with missing data may also introduce bias because the foods with complete information may differ from foods that were removed.
 
-Because of these limitations, the results should not be used as a replacement for official nutrition labels or professional dietary advice.
+Prediction errors could also have real consequences if the model were used for nutrition or health decisions. An incorrect calorie estimate could mislead someone who is trying to manage their diet or health.
+
+For this reason, the model should not replace official nutrition labels, USDA data, medical advice, or professional dietary guidance.
+
+The model is best viewed as an educational machine-learning analysis rather than a real-world decision-making tool.
 
 ### Future Improvements
 
-Future work could include:
+There are several ways this project could be improved.
 
-- Using a larger dataset
-- Including additional nutritional features
-- Testing more regression models
-- Using cross-validation
-- Performing hyperparameter tuning
+A larger and more diverse food dataset would likely make the results more reliable.
+
+Additional nutritional features could also be included, such as sugar content, saturated fat, cholesterol, or food category.
+
+Future versions of the project could also test additional regression models, use cross-validation, and perform hyperparameter tuning.
+
+Another useful extension would be to examine prediction errors in more detail and identify which types of foods are hardest for the model to predict.
+
+### Conclusion
+
+This project asked whether nutritional characteristics can be used to predict the calorie content of foods.
+
+The results suggest that nutritional features do contain useful predictive information.
+
+By comparing a baseline model with Linear Regression and K-Nearest Neighbors Regression, I was able to evaluate whether machine-learning models performed better than simply predicting the average calorie value.
+
+The best-performing model was **ADD FINAL MODEL HERE**, which produced the lowest prediction error.
+
+Overall, the project shows that features such as fat, carbohydrates, protein, fiber, and sodium can be used to estimate calorie content, although the small dataset and unusual observations limit how broadly the results can be applied.
 
 ### Code
 
@@ -316,4 +400,8 @@ U.S. Department of Agriculture & U.S. Department of Health and Human Services. (
 
 ### AI Usage
 
-AI tools were used to help organize the project, explain concepts, and improve the clarity of the written sections. The data analysis, code, and final interpretations were reviewed and completed by me.
+I used OpenAI ChatGPT, GPT-5.6, as a support tool during this project.
+
+I completed the data analysis, coding, model development, interpretation, and final decisions myself. ChatGPT was mainly used to help clarify machine-learning concepts, troubleshoot specific coding errors, improve the organization of my write-up, and review whether my project addressed the assignment requirements.
+
+All code was run and checked by me, and I reviewed and edited the final explanations and conclusions before publishing the project.
