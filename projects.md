@@ -388,7 +388,7 @@ Overall, the project shows that features such as fat, carbohydrates, protein, fi
 
 ### Code
 
-[View Project Notebook](nutrition_project.ipynb)
+[View Project Notebook](https://github.com/isivaraj/data-science-portfolio/blob/main/nutrition_project.ipynb)
 
 [View Cleaned Dataset](food_nutrition_clean.csv)
 
