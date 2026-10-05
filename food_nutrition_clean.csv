@@ -1,0 +1,55 @@
+food_name,calories,protein,carbs,fat,fiber,sodium
+"Hummus, commercial",229.0,7.35,14.9,17.1,5.4,438.0
+"Tomatoes, grape, raw",113.0,0.83,5.51,0.63,2.1,6.0
+"Broccoli, raw",132.0,2.57,6.29,0.34,2.4,36.0
+"Nuts, almonds, dry roasted, with salt added",620.0,20.4,16.2,57.8,11.0,256.0
+"Kale, raw",35.0,2.92,4.42,1.49,4.1,53.0
+"Sauce, salsa, ready-to-serve",29.0,1.44,6.74,0.19,1.8,656.0
+"Onion rings, breaded, par fried, frozen, prepared, heated in oven",1210.0,4.52,36.3,14.4,2.4,374.0
+"Pickles, cucumber, dill or kosher dill",12.0,0.48,1.99,0.43,1.0,808.0
+"Peanut butter, smooth style, with salt",2500.0,22.5,22.3,51.1,4.8,429.0
+"Grapefruit juice, white, canned or bottled, unsweetened",157.0,0.55,7.59,0.7,0.2,1.0
+"Peaches, yellow, raw",174.0,0.91,10.1,0.27,1.5,13.0
+"Seeds, sunflower seed kernels, dry roasted, with salt added",2560.0,21.0,17.1,56.1,10.3,532.0
+"Bread, white, commercially prepared",1130.0,9.43,49.2,3.59,2.3,477.0
+"Carrots, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",37.0,0.81,7.92,0.47,3.2,66.0
+"Mustard, prepared, yellow",254.0,4.25,5.3,3.38,4.3,1100.0
+"Figs, dried, uncooked",1040.0,3.3,63.9,0.92,9.8,10.0
+"Kiwifruit, green, raw",241.0,1.06,14.0,0.44,3.0,5.0
+"Melons, cantaloupe, raw",141.0,0.82,8.16,0.18,0.8,30.0
+"Nectarines, raw",39.0,1.06,9.18,0.28,1.5,13.0
+"Oranges, raw, navels (Includes foods for USDA's Food Distribution Program)",196.0,0.91,11.8,0.15,2.0,9.0
+"Strawberries, raw",132.0,0.64,7.63,0.22,1.8,10.0
+"Yogurt, Greek, strawberry, nonfat",347.0,8.06,12.2,0.15,0.6,32.0
+"Sauce, pasta, spaghetti/marinara, ready-to-serve",45.0,1.41,8.05,1.48,1.8,419.0
+"Pears, raw, bartlett (Includes foods for USDA's Food Distribution Program)",57.0,0.38,15.1,0.16,3.1,7.0
+"Olives, green, Manzanilla, stuffed with pimiento",130.0,1.15,4.96,12.9,4.0,1620.0
+"Cookies, oatmeal, soft, with raisins",1800.0,5.79,69.6,14.3,3.3,314.0
+"Restaurant, Chinese, sweet and sour pork",260.0,8.88,25.5,13.6,1.0,304.0
+"Restaurant, Latino, tamale, pork",728.0,7.38,15.8,9.04,2.4,473.0
+"Restaurant, Latino, pupusas con frijoles (pupusas, bean)",229.0,5.59,31.5,9.01,5.8,305.0
+"Bread, whole-wheat, commercially prepared",1060.0,12.3,43.1,3.55,6.0,450.0
+"Carrots, frozen, unprepared",153.0,0.81,7.92,0.47,3.2,66.0
+"Figs, dried, uncooked",249.0,3.3,63.9,0.92,9.8,10.0
+"Melons, cantaloupe, raw",34.0,0.82,8.16,0.18,0.8,30.0
+"Oranges, raw, navels",196.0,0.91,11.8,0.15,2.0,9.0
+"Pears, raw, bartlett",238.0,0.38,15.1,0.16,3.1,7.0
+"Restaurant, Chinese, sweet and sour pork",260.0,8.88,25.5,13.6,1.0,304.0
+"Sauce, salsa, ready-to-serve",122.0,1.44,6.74,0.19,1.8,656.0
+"Broccoli, raw",132.0,2.57,6.27,0.34,2.4,36.0
+"Strawberries, raw",132.0,0.64,7.63,0.22,1.8,10.0
+"Eggs, Grade A, Large, egg whole",617.0,12.4,0.96,9.96,0.0,129.0
+"Flour, wheat, all-purpose, unenriched, unbleached",362.0,12.0,74.6,1.7,3.0,2.0
+"Flour, whole wheat, unenriched",370.0,15.1,71.2,2.73,10.6,3.0
+"Flour, rice, white, unenriched",359.0,6.94,79.8,1.3,0.5,5.0
+"Flour, corn, yellow, fine meal, enriched",1520.0,6.2,80.8,1.74,4.3,0.0
+"Onions, red, raw",44.0,0.94,9.93,0.1,2.2,1.0
+"Onions, yellow, raw",160.0,0.83,8.61,0.05,1.9,1.0
+"Bananas, ripe and slightly ripe, raw",97.0,0.74,23.0,0.29,1.7,0.0
+"Onions, white, raw",35.0,0.89,7.68,0.13,1.2,2.0
+"Bananas, ripe and slightly ripe, raw",97.0,0.74,23.0,0.29,1.7,0.0
+"Apples, red delicious, with skin, raw",258.0,0.19,14.8,0.21,2.0,0.0
+"Apples, honeycrisp, with skin, raw",60.0,0.1,14.7,0.1,1.7,0.0
+"Apples, granny smith, with skin, raw",59.0,0.27,14.2,0.14,2.5,0.0
+"Apples, gala, with skin, raw",61.0,0.13,14.8,0.15,2.1,0.0
+"Apples, fuji, with skin, raw",65.0,0.15,15.7,0.16,2.1,1.0
