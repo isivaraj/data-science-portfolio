@@ -310,17 +310,19 @@ A lower MAE represents better predictive performance because it means the predic
 
 | Model | MAE |
 |---|---:|
-| Baseline | ADD BASELINE MAE |
-| Linear Regression | ADD LINEAR MAE |
-| KNN Regression | ADD KNN MAE |
+| Baseline | 139.74 |
+| Linear Regression | 3.32 |
+| KNN Regression | 34.65 |
 
 ![Model MAE Comparison](model_mae_comparison.png)
 
-The best-performing model was **ADD FINAL MODEL HERE**.
+The best-performing model was **Linear Regression**.
 
-This model was selected because it had the lowest MAE and therefore produced the most accurate calorie predictions on the testing data.
+Linear Regression had an MAE of approximately **3.32 calories**, meaning its predictions were about 3.32 calories away from the actual values on average.
 
-The comparison with the baseline is especially important because it shows whether the machine-learning models actually learned useful patterns from the nutritional features.
+This was substantially better than both the baseline MAE of approximately **139.74 calories** and the KNN Regression MAE of approximately **34.65 calories**.
+
+The strong performance of Linear Regression suggests that the relationship between the selected nutritional features and calorie content is largely linear within this dataset.
 
 ### Interesting Findings and Prediction Errors
 
@@ -338,7 +340,7 @@ The model results suggest that nutritional characteristics contain useful inform
 
 Fat, carbohydrates, and protein are especially important because they contribute directly to the energy content of food.
 
-If Linear Regression performs best, this suggests that much of the relationship between nutrients and calories can be represented using relatively simple linear relationships.
+Because Linear Regression performed best, this suggests that much of the relationship between nutrients and calories can be represented using relatively simple linear relationships.
 
 The model should not be interpreted as proving that every feature directly causes changes in calories. Instead, it identifies relationships present in this dataset.
 
@@ -380,7 +382,7 @@ The results suggest that nutritional features do contain useful predictive infor
 
 By comparing a baseline model with Linear Regression and K-Nearest Neighbors Regression, I was able to evaluate whether machine-learning models performed better than simply predicting the average calorie value.
 
-The best-performing model was **ADD FINAL MODEL HERE**, which produced the lowest prediction error.
+The best-performing model was **Linear Regression**, which produced the lowest prediction error with an MAE of approximately **3.32 calories**.
 
 Overall, the project shows that features such as fat, carbohydrates, protein, fiber, and sodium can be used to estimate calorie content, although the small dataset and unusual observations limit how broadly the results can be applied.
 
